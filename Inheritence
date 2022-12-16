@@ -1,0 +1,29 @@
+Inheritence
+Code:
+#include <iostream>
+
+using namespace std;
+class father
+{
+    public:
+    void car()
+    {
+        cout<<"I got one car";
+        cout<<endl;
+    }
+};
+class child:public father
+{
+    public:
+    void car1()
+    {
+        cout<<"I got two cars ";
+    }
+}ch;
+int main()
+{
+    ch.car();
+    ch.car1();
+
+    return 0;
+}
