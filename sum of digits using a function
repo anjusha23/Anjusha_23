@@ -1,0 +1,26 @@
+Question:A C program to find the sum of digits using a function.
+
+#include<iostream>
+using namespace std;
+int sum(int n)
+{
+    int r,sum=0;
+    while(n!=0)        //312!=0
+    {
+        r=n%10;     //312%10=2       31%10=1       3%10=3
+        n=n/10;     //312/10=31      31/10=3
+        sum=r+sum;  //0+2=2          2+1=3         3+3=6
+        
+        
+    }
+    cout<<sum;
+    return 0;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    sum(n);  //312
+    
+}
