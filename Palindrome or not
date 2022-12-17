@@ -1,0 +1,27 @@
+Question:Palindrome or not
+Code:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int x=n;
+    int r,sum;
+    while(n!=0)
+    {
+        r=n%10;
+        n=n/10;
+        sum=sum*10+r;
+    }
+    if(x==sum)
+    {
+        cout<<"Same";
+    }
+    else
+    {
+        cout<<"Not Same";
+    }
+   
+   
+}
